@@ -1,1 +1,156 @@
-//Import Layout files
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+/* basics  */
+
+// @for $i from 1 through 5 {
+//     .star:nth-child(#{$i}) {
+//       @include add-move-animation(6s);
+//       @include sterne();
+
+//       width: 1.5rem;
+//       height: 1.5rem;
+
+//       left: 5 + $i * $i + rem;
+//       top: 1 + $i * 4 + rem;
+//     }
+//   }
+.body-container {
+  @include flexSetup;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+//all about the Header
+header {
+  @include flexSetup;
+  justify-content: space-between;
+  width: 50vw;
+  height: 5vh;
+  border-bottom: 1px rgba(0, 0, 0, 0.205) solid;
+  a {
+    font-size: 1.2rem;
+  }
+}
+
+// hero
+.hero-section {
+  margin-top: 5vh;
+  @include flexSetup;
+  width: 50vw;
+  height: 20vh;
+}
+.img-holder {
+  width: 30%;
+  height: 100%;
+}
+.basicinfos {
+  @include flexSetup;
+  justify-content: space-between;
+
+  width: 50%;
+}
+.aboutme-section {
+  @include flexSetup;
+
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 70%;
+  height: 100%;
+  h4 {
+    width: 50%;
+  }
+
+  .personal-data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+    .likes-etc {
+      margin-top: 5%;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: space-between;
+    }
+    a {
+      margin: 0;
+    }
+    .infos {
+      display: flex;
+      p {
+        margin: 2px;
+      }
+      flex-direction: column;
+
+      width: 100%;
+      height: 70%;
+    }
+  }
+}
+//galery section
+.gallery-section {
+  @include flexSetup;
+  width: 100vw;
+  height: 70vh;
+  border: 2px red dashed;
+  .highlight-stories {
+    border: 2px red dashed;
+    width: 100%;
+    height: 18%;
+  }
+  .icons {
+    @include flexSetup;
+    justify-content: space-between;
+    border: 2px red dashed;
+    width: 40%;
+    height: 5%;
+    opacity: 50%;
+  }
+  .photos {
+    border: 2px red dashed;
+    width: 100%;
+    height: 75%;
+  }
+}
+//
+//
+// mobile
+@media only screen and (max-width: 500px) {
+  body,
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+
+    input {
+      display: none;
+    }
+    a {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  .aboutme-section {
+    height: 30vh;
+  }
+  .gallery-section {
+    height: 50vh;
+  }
+}

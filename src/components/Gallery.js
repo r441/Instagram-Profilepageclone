@@ -20,15 +20,23 @@ const tagged = <FontAwesomeIcon icon={faTags} />;
 //ReactDOM.render(element, document.body);
 const Gallery = (props) => {
   const { Data } = props;
-  console.log(Data);
+
   return (
-    <div>
-      im the Gallery gmtxrsts
+    <div className="gallery-section">
+      <div className="highlight-stories">
+        first story
+        {<img></img>}
+        sec story
+        {<img></img>}
+        third story
+        {<img></img>}{" "}
+      </div>
+
       <div className="icons">
-        <a href="#">{porteto}</a>
-        <a href="#">{reel}</a>
-        <a href="#"> {instatv}</a>
-        <a href="#"> {tagged}</a>
+        <a href="#">{porteto} POSTS</a>
+        <a href="#">{reel} REELS</a>
+        <a href="#"> {instatv} IGTV</a>
+        <a href="#"> {tagged} TAGGED</a>
       </div>
       <div className="photos">we display photos here</div>
     </div>

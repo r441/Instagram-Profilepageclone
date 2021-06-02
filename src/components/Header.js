@@ -13,13 +13,16 @@ const search = <FontAwesomeIcon icon={faSearch} />;
 const Header = () => {
   return (
     <header>
-      i am the header{search}
+      <h1>INSTAGRAM</h1>
+
+      {/* {search} */}
       <input type="search" placeholder="search"></input>
       <div className="icons-header">
         <a href="#">{home}</a>
         <a href="#">{message}</a>
         <a href="#"> {newsfeed}</a>
         <a href="#"> {heart}</a>
+        {/* <a href="#"><img src=""></img></a> */}
       </div>
     </header>
   );

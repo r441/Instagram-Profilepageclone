@@ -6,42 +6,48 @@ import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 const veloskatw = <FontAwesomeIcon icon={faChevronDown} />;
 const hammenu = <FontAwesomeIcon icon={faEllipsisH} />;
 
-const Hero = () => {
+const Hero = (props) => {
+  const { Data } = props;
+  console.log(Data[1].img);
   return (
-    <div>
+    <div className="hero-section">
       <div className="img-holder">
-        {
-          // <img ></img>
-        }
-      </div>{" "}
-      <div className="aboutme-section">
-        {" "}
-        <p>NAME OF USER</p> <button>Follow</button> <button>{veloskatw}</button>
-        <a href="#">{hammenu}</a>{" "}
-        <div className="personal-data">
-          {" "}
-          <div className="likes-etc">
-            <a href="#">15413 posts</a> <a href="#">113 followers</a>{" "}
-            <a href="#">1513 following</a>
-          </div>
-          <p>real infots of user</p>
-          <p>shop @esthdrtyh</p>
-          <p>
-            <a href="#">im a link </a>
-          </p>
-        </div>
+        <img src="./img/pic3.jpg" />
       </div>
-      <div className="highlight-stories">
-        {" "}
-        {
-          // <img ></img>
-        }{" "}
-        {
-          // <img ></img>
-        }{" "}
-        {
-          // <img ></img>
-        }{" "}
+      <div className="aboutme-section">
+        <h4>
+          {" "}
+          <b>NICKNAME_OF_USER</b>
+        </h4>
+        <div className="basicinfos">
+          <button>
+            <b>Follow</b>
+          </button>
+          <button>{veloskatw}</button>
+          <a href="#">{hammenu}</a>{" "}
+        </div>
+        <div className="personal-data">
+          <div className="likes-etc">
+            <a href="#">
+              <b>15413</b> posts
+            </a>{" "}
+            <a href="#">
+              <b>113</b> followers
+            </a>{" "}
+            <a href="#">
+              <b>1513</b> following
+            </a>
+          </div>
+          <div className="infos">
+            <p>
+              <b>real name of user</b>
+            </p>
+
+            <a href="#">shop @myshop</a>
+
+            <a href="#">im a link </a>
+          </div>
+        </div>
       </div>
     </div>
   );

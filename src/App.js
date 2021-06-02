@@ -3,19 +3,20 @@ import Header from "./components/Header";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Data from "./data.json";
+import "./sass/Main.scss";
 
 function App() {
   // const [posts, setPosts] = useState(Data);
 
   return (
-    <React.Fragment>
+    <div className="body-container">
       {
         // <Gallery posts={posts} />
       }
       <Header />
-      <Hero />
+      <Hero Data={Data} />
       <Gallery Data={Data} />
-    </React.Fragment>
+    </div>
   );
 }
 

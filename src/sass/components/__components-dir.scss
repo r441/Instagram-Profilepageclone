@@ -1,1 +1,43 @@
 //Import Component files
+h1 {
+  font-size: 1.3rem;
+}
+a {
+  margin: 10px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  @include nodecoforlinks;
+}
+input::placeholder {
+  text-align: center;
+}
+button {
+  @include nodecoforlinks;
+  color: white;
+  background-color: rgb(65, 160, 238);
+  padding: 4px 16px 4px 16px;
+  border: none;
+}
+//useful for the picture hover effect
+// a:link,
+// a:visited {
+//   background-color: purple;
+//   border: none;
+//   color: #ffffff;
+//   padding: 15px 32px;
+//   text-align: center;
+//   -webkit-transition-duration: 0.4s;
+//   transition-duration: 0.4s;
+//   text-decoration: none;
+//   font-size: 16px;
+//   cursor: pointer;
+//   display: inline-block;
+// }
+
+// a:hover,
+// a:active {
+//   background-color: #6d0062;
+// }
