@@ -12,7 +12,7 @@ const Hero = (props) => {
   return (
     <div className="hero-section">
       <div className="img-holder">
-        <img src="./img/pic3.jpg" alt="profil pic" />
+        <img src="./img/icon.png" alt="profil pic" />
       </div>
       <div className="aboutme-section">
         <h4>
