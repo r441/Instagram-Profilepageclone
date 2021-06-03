@@ -6,7 +6,7 @@
 //   console.log(Data);
 // case 3
 
-import ReactDOM from "react-dom";
+//import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPortrait } from "@fortawesome/free-solid-svg-icons";
 import { faRetweet } from "@fortawesome/free-solid-svg-icons";
@@ -19,24 +19,34 @@ const instatv = <FontAwesomeIcon icon={faTv} />;
 const tagged = <FontAwesomeIcon icon={faTags} />;
 //ReactDOM.render(element, document.body);
 const Gallery = (props) => {
-  const { Data } = props;
+  // const { Data } = props;
 
   return (
     <div className="gallery-section">
       <div className="highlight-stories">
         first story
-        {<img></img>}
+        {<img alt="stories"></img>}
         sec story
-        {<img></img>}
+        {<img alt="stories2"></img>}
         third story
-        {<img></img>}{" "}
+        {<img alt="stories3"></img>}{" "}
       </div>
 
       <div className="icons">
-        <a href="#">{porteto} POSTS</a>
-        <a href="#">{reel} REELS</a>
-        <a href="#"> {instatv} IGTV</a>
-        <a href="#"> {tagged} TAGGED</a>
+        <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
+          {porteto} POSTS
+        </a>
+        <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
+          {reel} REELS
+        </a>
+        <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
+          {" "}
+          {instatv} IGTV
+        </a>
+        <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
+          {" "}
+          {tagged} TAGGED
+        </a>
       </div>
       <div className="photos">we display photos here</div>
     </div>
