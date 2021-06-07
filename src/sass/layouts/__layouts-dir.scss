@@ -5,6 +5,8 @@
   font-size: 18px;
 }
 /* basics  */
+//"homepage": "https://angelospa.github.io/Instagram-Profilepageclone/",
+//https://source.unsplash.com/
 
 // @for $i from 1 through 5 {
 //     .star:nth-child(#{$i}) {
@@ -43,9 +45,10 @@ header {
   width: 50vw;
   height: 20vh;
   img {
-    width: 60px;
-    height: 60px;
+    width: 9rem;
+    height: 9rem;
     border-radius: 100%;
+    border: 3px black solid;
   }
 }
 .img-holder {
@@ -104,14 +107,18 @@ header {
 .gallery-section {
   @include flexSetup;
 
-  width: 100vw;
+  width: 60%;
   height: 70vh;
 
   .highlight-stories {
+    margin: 1rem 0 1rem 0;
+
     img {
-      width: 40px;
-      height: 40px;
+      width: 5rem;
+      height: 5rem;
       border-radius: 100%;
+
+      margin: 1rem;
     }
     width: 100%;
     height: 18%;
@@ -125,8 +132,14 @@ header {
     opacity: 50%;
   }
   .photos {
+    @include flexSetup;
     width: 100%;
     height: 75%;
+    img {
+      margin: 2rem;
+      width: 17rem;
+      height: 17rem;
+    }
   }
 }
 //
@@ -158,6 +171,12 @@ header {
     width: 100%;
     height: auto;
 
+    img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      border: 1px black solid;
+    }
     border-bottom: 20px;
     .aboutme-section {
       h4 {
@@ -176,20 +195,42 @@ header {
     }
   }
   .gallery-section {
-    margin-top: 15px;
+    display: block;
+
     width: 100%;
+    height: 70vh;
 
-    .icons {
+    .highlight-stories {
+      margin: 1rem 0 1rem 0;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        margin: 1rem;
+      }
       width: 100%;
-      height: 3rem;
-
+      height: 18%;
+    }
+    .icons {
+      @include flexSetup;
+      justify-content: space-between;
       span {
         display: none;
       }
+      width: 100%;
+      height: 20%;
+      opacity: 50%;
     }
     .photos {
-      display: block;
-      border: 2px red dashed;
+      @include flexSetup;
+      width: 100%;
+      height: 75%;
+      img {
+        margin: 0.5rem;
+        width: 9rem;
+        height: 9rem;
+      }
     }
   }
 }

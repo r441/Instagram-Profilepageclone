@@ -19,7 +19,26 @@ const instatv = <FontAwesomeIcon icon={faTv} />;
 const tagged = <FontAwesomeIcon icon={faTags} />;
 //ReactDOM.render(element, document.body);
 const Gallery = (props) => {
-  // const { Data } = props;
+  const { Data } = props;
+
+  let likecounter = [];
+  let commentliker = [];
+  let imger = [];
+  Data.forEach((element) => {
+    likecounter.push(element.likes);
+    commentliker.push(element.comments);
+    imger.push(element.img);
+  });
+  //I HAVE THE ARRAYS I WILL TRY IT TO A NEW COMPONENT AND SEND IT !!!
+  console.log(likecounter, commentliker, imger);
+
+  //   <div>
+  //     {<img src="./img/pic3.jpg" alt="post"></img>}{" "}
+  //     <span>
+  //       {likecounter} {commentliker}
+  //     </span>
+  //   </div>
+  // );
 
   return (
     <div className="gallery-section">
@@ -46,7 +65,14 @@ const Gallery = (props) => {
         </a>
       </div>
       <div className="photos">
-        <div className="photo-obj"></div>
+        <div>{<img src="./img/pic1.jpg" alt="post"></img>}</div>
+        <div>{<img src="./img/pic2.jpg" alt="post"></img>}</div>
+        <div>{<img src="./img/pic3.jpg" alt="post"></img>}</div>
+        <div>{<img src="./img/pic4.jpg" alt="post"></img>}</div>
+        <div>{<img src="./img/pic5.jpg" alt="post"></img>}</div>
+        <div>{<img src="./img/pic6.jpg" alt="post"></img>}</div>
+        <div>{<img src="./img/pic7.jpg" alt="post"></img>}</div>
+        <div>{<img src="./img/pic8.jpg" alt="post"></img>}</div>
       </div>
     </div>
   );
