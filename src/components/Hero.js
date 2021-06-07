@@ -50,7 +50,7 @@ const Hero = (props) => {
             </a>
 
             <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
-              im a link{" "}
+              &nbsp; im a link{" "}
             </a>
           </div>
         </div>

@@ -24,31 +24,30 @@ const Gallery = (props) => {
   return (
     <div className="gallery-section">
       <div className="highlight-stories">
-        first story
-        {<img alt="stories"></img>}
-        sec story
-        {<img alt="stories2"></img>}
-        third story
-        {<img alt="stories3"></img>}{" "}
+        {<img src="./img/pic3.jpg" alt="stories"></img>}
+        {<img src="./img/pic2.jpg" alt="stories2"></img>}
+        {<img src="./img/pic7.jpg" alt="stories3"></img>}{" "}
       </div>
 
       <div className="icons">
         <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
-          {porteto} POSTS
+          {porteto} <span>POSTS</span>
         </a>
         <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
-          {reel} REELS
-        </a>
-        <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
-          {" "}
-          {instatv} IGTV
+          {reel} <span>REELS</span>
         </a>
         <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
           {" "}
-          {tagged} TAGGED
+          {instatv} <span>IGTV</span>
+        </a>
+        <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
+          {" "}
+          {tagged} <span>TAGGED</span>
         </a>
       </div>
-      <div className="photos">we display photos here</div>
+      <div className="photos">
+        <div className="photo-obj"></div>
+      </div>
     </div>
   );
 };
