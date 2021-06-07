@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.1430ecfe.chunk.css",
-    "main.js": "/static/js/main.3d498eca.chunk.js",
-    "main.js.map": "/static/js/main.3d498eca.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7629508b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7629508b.js.map",
-    "static/js/2.3cf76060.chunk.js": "/static/js/2.3cf76060.chunk.js",
-    "static/js/2.3cf76060.chunk.js.map": "/static/js/2.3cf76060.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.1430ecfe.chunk.css.map": "/static/css/main.1430ecfe.chunk.css.map",
-    "static/js/2.3cf76060.chunk.js.LICENSE.txt": "/static/js/2.3cf76060.chunk.js.LICENSE.txt"
+    "main.css": "/Instagram-Profilepageclone/static/css/main.9558b2ab.chunk.css",
+    "main.js": "/Instagram-Profilepageclone/static/js/main.9e05372a.chunk.js",
+    "main.js.map": "/Instagram-Profilepageclone/static/js/main.9e05372a.chunk.js.map",
+    "runtime-main.js": "/Instagram-Profilepageclone/static/js/runtime-main.2526d15e.js",
+    "runtime-main.js.map": "/Instagram-Profilepageclone/static/js/runtime-main.2526d15e.js.map",
+    "static/js/2.3cf76060.chunk.js": "/Instagram-Profilepageclone/static/js/2.3cf76060.chunk.js",
+    "static/js/2.3cf76060.chunk.js.map": "/Instagram-Profilepageclone/static/js/2.3cf76060.chunk.js.map",
+    "index.html": "/Instagram-Profilepageclone/index.html",
+    "static/css/main.9558b2ab.chunk.css.map": "/Instagram-Profilepageclone/static/css/main.9558b2ab.chunk.css.map",
+    "static/js/2.3cf76060.chunk.js.LICENSE.txt": "/Instagram-Profilepageclone/static/js/2.3cf76060.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7629508b.js",
+    "static/js/runtime-main.2526d15e.js",
     "static/js/2.3cf76060.chunk.js",
-    "static/css/main.1430ecfe.chunk.css",
-    "static/js/main.3d498eca.chunk.js"
+    "static/css/main.9558b2ab.chunk.css",
+    "static/js/main.9e05372a.chunk.js"
   ]
 }
