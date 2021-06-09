@@ -140,9 +140,6 @@ header {
       width: 17rem;
       height: 17rem;
     }
-    img:hover {
-      opacity: 30%;
-    }
   }
 }
 //
@@ -227,7 +224,7 @@ header {
     }
     .photos {
       @include flexSetup;
-      border: 2px red dashed;
+
       img {
         width: 9rem;
         height: 9rem;

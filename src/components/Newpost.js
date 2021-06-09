@@ -13,7 +13,7 @@ const Newpost = (props) => {
   const [posts, setPosts] = useState(false);
   const [images, setImages] = useState([]);
   //an example of use effect to display random images from unsplash
-  //everytime that the status of the post chnages (line 27-28) it "fires" the setImages hokk and throws one more link to our [.. images]
+  //everytime that the status of the post chnages (line 27-28) it "fires" the setImages hook and throws 3 more links to our [.. images]
   useEffect(() => {
     setImages([
       ...images,

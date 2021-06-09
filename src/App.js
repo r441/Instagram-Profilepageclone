@@ -19,5 +19,5 @@ function App() {
     </div>
   );
 }
-//"homepage": "https://angelospa.github.io/Instagram-Profilepageclone/",
+
 export default App;
