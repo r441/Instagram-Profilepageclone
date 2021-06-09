@@ -44,3 +44,23 @@ button {
 // a:active {
 //   background-color: #6d0062;
 // }
+.post-element {
+  @include flexSetup;
+  img:hover {
+    opacity: 30%;
+  }
+  img {
+    z-index: 99;
+  }
+  position: relative;
+}
+.overlay {
+  z-index: 1;
+  position: absolute;
+
+  padding: 4rem 2rem 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+}

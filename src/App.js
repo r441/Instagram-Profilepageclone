@@ -6,7 +6,7 @@ import Data from "./data.json";
 import "./sass/Main.scss";
 
 function App() {
-  // const [posts, setPosts] = useState(Data);
+  //const [posts, setPosts] = useState(Data);
 
   return (
     <div className="body-container">

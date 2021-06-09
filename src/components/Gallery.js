@@ -12,11 +12,9 @@ import { faPortrait } from "@fortawesome/free-solid-svg-icons";
 import { faRetweet } from "@fortawesome/free-solid-svg-icons";
 import { faTv } from "@fortawesome/free-solid-svg-icons";
 import { faTags } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
-import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
-const heart = <FontAwesomeIcon icon={faHeart} />;
-const message = <FontAwesomeIcon icon={faEnvelopeOpenText} />;
+import Newpost from "./Newpost";
+
 const porteto = <FontAwesomeIcon icon={faPortrait} />;
 const reel = <FontAwesomeIcon icon={faRetweet} />;
 const instatv = <FontAwesomeIcon icon={faTv} />;
@@ -24,8 +22,11 @@ const tagged = <FontAwesomeIcon icon={faTags} />;
 //ReactDOM.render(element, document.body);
 const Gallery = (props) => {
   const { Data } = props;
-
   let pici = "";
+  // const Newpost = () => {
+  //   console.log("arghdsth");
+  //   return <h2>more...</h2>;
+  // };
 
   //I HAVE THE ARRAYS I WILL TRY IT TO A NEW COMPONENT AND SEND IT !!!
   //console.log(likecounter, commentliker, imger);
@@ -41,11 +42,25 @@ const Gallery = (props) => {
   return (
     <div className="gallery-section">
       <div className="highlight-stories">
-        {<img src="./img/pic3.jpg" alt="stories"></img>}
-        {<img src="./img/pic2.jpg" alt="stories2"></img>}
-        {<img src="./img/pic7.jpg" alt="stories3"></img>}{" "}
+        {
+          <img
+            src="https://source.unsplash.com/collection/160727/1600x900"
+            alt="stories"
+          ></img>
+        }
+        {
+          <img
+            src="https://source.unsplash.com/collection/190727/1600x900"
+            alt="stories2"
+          ></img>
+        }
+        {
+          <img
+            src="https://source.unsplash.com/collection/180727/1600x900"
+            alt="stories3"
+          ></img>
+        }{" "}
       </div>
-
       <div className="icons">
         <a href="https://angelospa.github.io/Instagram-Profilepageclone/">
           {porteto} <span>POSTS</span>
@@ -62,29 +77,8 @@ const Gallery = (props) => {
           {tagged} <span>TAGGED</span>
         </a>
       </div>
-      <div className="photos">
-        <div>
-          {Data.map((element, i) => {
-            // pici = `./img/pic${i}.jpg`;
-            <div key={i}>
-              <p>
-                &nbsp;{heart} {element.likes} &nbsp;{message} {element.comments}
-              </p>
-              <img src={pici} alt="post"></img>
-            </div>;
-            console.log(element.likes);
-          })}
-        </div>
-        ;
-        {/*  <div>{<img src="./img/pic1.jpg" alt="post"></img>}</div>
-        <div>{<img src="./img/pic2.jpg" alt="post"></img>}</div>
-        <div>{<img src="./img/pic3.jpg" alt="post"></img>}</div>
-        <div>{<img src="./img/pic4.jpg" alt="post"></img>}</div>
-        <div>{<img src="./img/pic5.jpg" alt="post"></img>}</div>
-        <div>{<img src="./img/pic6.jpg" alt="post"></img>}</div>
-        <div>{<img src="./img/pic7.jpg" alt="post"></img>}</div>
-        <div>{<img src="./img/pic8.jpg" alt="post"></img>}</div> */}
-      </div>
+
+      <Newpost Data={Data} />
     </div>
   );
 };

@@ -6,7 +6,7 @@
     "text": "Enjoining my day",
     "likes": 2345,
     "comments": 23,
-    "img": "./img/pic1.jpg",
+    "img": "pic1.png",
     "date": "11.04.1821"
   },
   {
@@ -16,7 +16,7 @@
     "text": "Enjoining my day",
     "likes": 2546,
     "comments": 12,
-    "img": "./img/pic2.jpg",
+    "img": "pic2",
     "date": "11.04.1821"
   },
   {
@@ -97,16 +97,6 @@
     "likes": 578,
     "comments": 234,
     "img": "./img/pic10.jpg",
-    "date": "11.04.1821"
-  },
-  {
-    "id": 11,
-    "title": "Schlachtensee",
-    "location": "Berlin",
-    "text": "Enjoining my day",
-    "likes": 356,
-    "comments": 234,
-    "img": "./img/icon.png",
     "date": "11.04.1821"
   }
 ]
