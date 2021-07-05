@@ -2,7 +2,7 @@
 <p  align="center">
 
   <p align="center">
-  <strong> toDoList </strong>
+  <strong> Instagram profile page </strong>
 I created my own version of an Instagram profile-page using React and SASS.
 <!-- examples of useState useEffect and useRef :
 ![here](https://github.com/AngelosPa/PortfolioWebsite/blob/main/src/App.js) -->
@@ -10,7 +10,7 @@ I created my own version of an Instagram profile-page using React and SASS.
     <a href="https://github.com/AngelosPa/toDoList-ReactVersion/tree/main/mytodolist"><strong>Explore the files »</strong></a>
     <br />
     <br />
-    <a href="https://angelospa.github.io/toDoList-ReactVersion/">View Demo</a>
+    <a href="https://angelospa.github.io/Instagram-Profilepageclone/">View Demo</a>
     ·
     <a href="https://github.com/AngelosPa/Instagram-Profilepageclone/blob/main/src/components/Newpost.js">you can see examples of { useState, useEffect } Hooks</a>
     ·
