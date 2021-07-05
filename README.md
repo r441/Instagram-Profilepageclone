@@ -51,7 +51,9 @@ You need to make sure you machine has NPM installed and up to date.
    3.2 npm install react-router-dom
   
  
-   3§.5 npm i --save @fortawesome/fontawesome-svg-core  npm install --save @fortawesome/free-solid-svg-icons  npm install --save @fortawesome/react-fontawesome
+   3§.5 npm i --save @fortawesome/fontawesome-svg-core 
+   npm install --save @fortawesome/free-solid-svg-icons  
+   npm install --save @fortawesome/react-fontawesome
    ```
 4. Run the application
    ```sh
